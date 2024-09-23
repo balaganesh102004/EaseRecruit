@@ -1,0 +1,45 @@
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #dfdf07;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 24px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+  transition: background-color 0.3s;
+}
+
+.chatbot-icon:hover {
+  background-color: #f0e68c;
+}
+
+.welcome-message {
+  position: absolute;
+  bottom: 70px; /* Adjust based on your design */
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+
+/* New styles for the chat messages container */
+.chatbot-messages {
+  max-height: 400px; /* Set a maximum height for the chat area */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 10px;
+  background-color: #fff; /* Background color for the chat area */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
